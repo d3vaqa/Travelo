@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 2rem 6rem;
+    background: #4e6c97;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor:pointer;
+    transition: background .5s ease-in;
+}
+button:hover{
+    background:#27394e;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 4.5rem;
+}
+h3{
+    font-size: 3rem;
+    font-weight: 300;
+}
+h4,h5{
+    font-size: 2.8rem;
+}
+
+li,button,label, input{
+    font-size: 2rem;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*NAV SECTIONS WITH HERO*/
+
+.main-header{
+    background:#131c27;
+    color: #ffffff;
+}
+
+nav{
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex:1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+}
+#logo{
+    flex:2 1 40rem;
+    align-items: center;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400 ;
+
+
+
+}
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.3), transparent),
+    url("./img/landing-page.jpg");
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3{
+    padding: 5rem;
+}
+/*Benefits  SECTION*/
+
+#locations{
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.3), transparent),
+    url("./img/new-york-page.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+#locations-header{
+    width: 90%;
+    margin: auto;
+}
+
+#locations-header h2{
+    padding: 1rem 0;
+}
+#locations-header h3{
+    padding: 3rem 0;
+    background: linear-gradient(#131c27, #663b34);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cloud{
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.moving-cloud-1{
+
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+
+}
+.moving-cloud-2 {
+    top: 15%;
+    z-index: -1;
+    opacity: 0.5;
+    animation: cloudAnimation 2s infinite alternate ease-in-out;
+
+
+}
+
+@keyframes cloudAnimation {
+    from{
+        transform: translate(10%, -10%);
+    }
+    to{
+        transform: translate(0,0);
+    }
+
+}
+
+
+
+
+/*media query*/
+
+@media screen and (max-width: 932px){
+    html{
+        font-size: 45%;
+    }
+    nav{
+        text-align: center;
+
+    }
+    #logo{
+        padding: 1rem;
+    }
+
+    .cloud{
+        height: 40%;
+    }
+    .moving-cloud-1{
+        z-index: -1;
+    }
+    .moving-cloud-2{
+        z-index: -2;
+        top: 12%;
+    }
+    #locations-header h3{
+        background: rgba(19,28,39,0.6) ;
+        -webkit-text-fill-color: #ffffff;
+        text-fill-color: #fffff;
+        padding: 1.3rem;
+    }
+
+}
+
+
+
+
