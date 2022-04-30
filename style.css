@@ -338,9 +338,10 @@ footer{
     footer h5{
         padding-bottom: 3rem;
     }
-    .footer-wrapper ul{
+    .footer-wrapper ul {
 
         justify-content: space-evenly;
+    }
 
 }
 
