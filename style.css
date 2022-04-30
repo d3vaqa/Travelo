@@ -38,9 +38,10 @@ h4,h5{
     font-size: 2.8rem;
 }
 
-li,button,label, input{
+li,button,label, input,p{
     font-size: 2rem;
 }
+
 a{
     color: #ffffff;
     text-decoration: none;
@@ -159,6 +160,67 @@ nav ul{
 
 }
 
+/*Benefits section*/
+
+.benefits-header{
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+.benefits-header h2{
+    padding-bottom: 2rem;
+}
+.benefits-header h3{
+    padding-bottom: 1rem;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    text-align: center;
+    flex: 1 1 26rem;
+    margin: 2rem 4.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card-icon{
+    background: #27394e;
+}
+
+.cards img{
+    max-width: 15%;
+    margin: 2rem;
+}
+
+.card h4,p{
+    padding: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -191,6 +253,9 @@ nav ul{
         -webkit-text-fill-color: #ffffff;
         text-fill-color: #fffff;
         padding: 1.3rem;
+    }
+    .card{
+        margin: 2rem 1rem;
     }
 
 }
